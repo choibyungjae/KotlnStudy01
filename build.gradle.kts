@@ -29,6 +29,14 @@ dependencies {
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
+	// Spring Security 사용시 필요
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	// JWT 사용시 필요
+	implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+	runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5")
+
+
 }
 
 allOpen {
